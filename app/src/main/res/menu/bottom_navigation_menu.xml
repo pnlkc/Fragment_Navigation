@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_btn_one"
+        android:title="1번"
+        android:icon="@drawable/ic_baseline_stay_current_portrait_24" />
+
+    <item
+        android:id="@+id/navigation_btn_two"
+        android:title="2번"
+        android:icon="@drawable/ic_baseline_stay_current_portrait_24" />
+
+    <item
+        android:id="@+id/navigation_btn_three"
+        android:title="3번"
+        android:icon="@drawable/ic_baseline_stay_current_portrait_24" />
+
+    <item
+        android:id="@+id/navigation_btn_four"
+        android:title="4번"
+        android:icon="@drawable/ic_baseline_stay_current_portrait_24" />
+
+</menu>

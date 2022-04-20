@@ -1,47 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/fragmentOne">
-
+    app:startDestination="@id/navigation_btn_one">
     <fragment
-        android:id="@+id/fragmentOne"
-        android:name="com.example.fragmentwithnavigation.FragmentOne"
-        android:label="FragmentOne" >
+        android:id="@+id/navigation_btn_one"
+        android:name="com.example.fragmentwithnavigation.fragment.FragmentOne"
+        android:label="fragment_one"
+        tools:layout="@layout/fragment_one" >
         <action
             android:id="@+id/action_fragmentOne_to_fragmentTwo"
-            app:destination="@id/fragmentTwo"
-            app:popUpTo="@id/fragmentTwo"
-            app:popUpToInclusive="true" />
+            app:destination="@id/navigation_btn_two" />
     </fragment>
     <fragment
-        android:id="@+id/fragmentTwo"
-        android:name="com.example.fragmentwithnavigation.FragmentTwo"
-        android:label="FragmentTwo" >
+        android:id="@+id/navigation_btn_two"
+        android:name="com.example.fragmentwithnavigation.fragment.FragmentTwo"
+        android:label="fragment_two"
+        tools:layout="@layout/fragment_two" >
         <action
             android:id="@+id/action_fragmentTwo_to_fragmentThree"
-            app:destination="@id/fragmentThree"
-            app:popUpTo="@id/fragmentThree"
-            app:popUpToInclusive="true" />
+            app:destination="@id/navigation_btn_three" />
     </fragment>
     <fragment
-        android:id="@+id/fragmentThree"
-        android:name="com.example.fragmentwithnavigation.FragmentThree"
-        android:label="FragmentThree" >
+        android:id="@+id/navigation_btn_three"
+        android:name="com.example.fragmentwithnavigation.fragment.FragmentThree"
+        android:label="fragment_three"
+        tools:layout="@layout/fragment_three" >
         <action
             android:id="@+id/action_fragmentThree_to_fragmentFour"
-            app:destination="@id/fragmentFour"
-            app:popUpTo="@id/fragmentFour"
-            app:popUpToInclusive="true" />
+            app:destination="@id/navigation_btn_four" />
     </fragment>
     <fragment
-        android:id="@+id/fragmentFour"
-        android:name="com.example.fragmentwithnavigation.FragmentFour"
-        android:label="FragmentFour" >
+        android:id="@+id/navigation_btn_four"
+        android:name="com.example.fragmentwithnavigation.fragment.FragmentFour"
+        android:label="fragment_four"
+        tools:layout="@layout/fragment_four" >
         <action
             android:id="@+id/action_fragmentFour_to_fragmentOne"
-            app:destination="@id/fragmentOne"
-            app:popUpTo="@id/fragmentOne"
-            app:popUpToInclusive="true" />
+            app:destination="@id/navigation_btn_one" />
     </fragment>
 </navigation>

@@ -1,4 +1,4 @@
-package com.example.fragmentwithnavigation
+package com.example.fragmentwithnavigation.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,9 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.example.fragmentwithnavigation.databinding.FragmentOneBinding
+import com.example.fragmentwithnavigation.R
 import com.example.fragmentwithnavigation.databinding.FragmentThreeBinding
-import com.example.fragmentwithnavigation.databinding.FragmentTwoBinding
 
 // 클래스에 프래그먼트 클래스 상속
 class FragmentThree : Fragment() {
